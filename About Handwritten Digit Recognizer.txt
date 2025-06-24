@@ -1,0 +1,25 @@
+Project Objective:
+To develop a Convolutional Neural Network (CNN) that can accurately recognize handwritten digits (0–9) using image data from the MNIST dataset.
+
+Dataset Used:
+Name: MNIST Handwritten Digit Dataset
+Source: Directly available through tensorflow.keras.datasets
+Description: Contains 70,000 grayscale images of handwritten digits (60,000 for training and 10,000 for testing), each image of size 28x28 pixels.
+
+**What I Did (Step-by-Step):**
+1)Loaded the MNIST dataset from TensorFlow and explored the image data and corresponding digit labels.
+2)Normalized the pixel values to the range [0, 1] by dividing by 255.0 to improve training efficiency.
+3)Reshaped the input images to add a single channel dimension for compatibility with CNNs.
+4)One-hot encoded the labels using to_categorical() for multi-class classification.
+5)Designed a CNN architecture using Conv2D, MaxPooling2D, Flatten, and Dense layers.
+6)Compiled the model with Adam optimizer and categorical_crossentropy loss function suitable for multi-class classification.
+7)Trained the model for several epochs using the training set and validated it on the test set.
+8)Evaluated model accuracy using test data to ensure good generalization to unseen handwritten digits.
+9)Saved the model for reuse and deployment using model.save().
+
+💡 What I Learned:
+-How to use the MNIST dataset for digit classification tasks.
+-Understanding the structure of a CNN model and how each layer contributes to feature learning.
+-The importance of data preprocessing, normalization, and label encoding in deep learning.
+-Practical experience with training, validating, and evaluating a deep learning model.
+

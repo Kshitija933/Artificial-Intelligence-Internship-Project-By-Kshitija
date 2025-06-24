@@ -1,0 +1,24 @@
+**Dataset Overview**
+
+Name: SMS Spam Collection Dataset
+Source: https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset
+Format: CSV file with columns like:
+v1: label (ham or spam)
+v2: the actual text message
+Contains over 5,000 messages labeled as either spam or not spam.
+
+
+**Project Journey Steps**
+
+1)Step 1: Load the Dataset
+In the .py file, the dataset is loaded using pandas.read_csv(). Since the original file has extra unnamed columns, only v1 (label) and v2 (text) are selected and renamed to label and text.
+2)Step 2: Data Cleaning
+The labels are converted from text (ham, spam) to numbers (0, 1) using .map() function. This prepares the target column for binary classification.
+3)Step 3: Vectorizing the Text
+Since ML models can't understand plain text, we convert it into numbers using CountVectorizer(). This transforms each message into a vector of word counts (Bag-of-Words model).
+4)Step 4: Splitting the Dataset
+Using train_test_split(), the data is split into training (80%) and testing (20%) sets so we can train and then evaluate the model.
+5)Step 5: Model Training
+We use MultinomialNB(), a Naive Bayes classifier suitable for text data. The model is trained on the training set with the vectorized features.
+6)Step 6: Model Prediction and Evaluation
+Predictions are made on the test set, and performance is evaluated using classification_report() from scikit-learn, which provides precision, recall, F1-score, and accuracy.
