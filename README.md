@@ -1,5 +1,5 @@
 
-# 🤖 AI Internship Projects – Combined Summary
+# PROJECT SUMMARY AND OVERVIEW
 
 This repository contains two applied AI projects developed during my internship to explore practical implementations of machine learning and deep learning. 
 Each project is built using real-world datasets and demonstrates how AI can solve classification problems in both text and image formats.
