@@ -1,8 +1,8 @@
 # # 📩 Spam Email Classifier – Step-by-Step Guide
 
 ## 📁 Dataset Used
-- File: `spam.csv` (SMS Spam Collection Dataset)
-- Source: https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset
+File: `spam.csv` (SMS Spam Collection Dataset)
+Source: https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset
 
 ## 🧪 Objective
 Train a machine learning model to detect spam emails using textual content from SMS messages.
@@ -46,4 +46,5 @@ Use `classification_report` to display model accuracy, precision, recall, and F1
 ---
 
 **Author:** Kshitija Kalyan Karpe 
+
 **Email:** kshitijakarpe2201@gmail.com
